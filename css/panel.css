@@ -1,0 +1,21 @@
+.side{display:flex;flex-direction:column;gap:20px;min-width:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.03)}
+.card.start{border:2px solid var(--focus)}
+.card.start ol{margin-block:6px 0;margin-inline-start:20px;display:flex;flex-direction:column;gap:4px}
+.card.start p{color:var(--muted);font-size:.92rem;margin-top:8px}
+.tasks{margin:8px 0 0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.task-row{border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;background:var(--panel)}
+.task-row.done{background:rgba(60,207,142,.08);border-color:var(--ok)}
+.task-check{width:20px;height:20px;accent-color:var(--ok);cursor:pointer;margin-top:2px}
+.task-txt strong{display:block;font-size:.95rem;margin-bottom:2px}
+.task-txt span{font-size:.88rem;color:var(--muted);display:block;line-height:1.4}
+.task-txt details{margin-top:6px;font-size:.82rem}
+.task-txt summary{cursor:pointer;color:var(--focus);font-weight:700}
+.task-txt details p{margin-top:4px;background:rgba(95,179,255,.1);padding:5px 8px;border-radius:6px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.tool{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:10px;padding:9px 15px;cursor:pointer}
+.tool:hover{background:var(--page)}
+.tool[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.log-title{margin-top:16px;font-size:.95rem}
+.hint{margin-top:10px;color:var(--muted);font-size:.88rem}
+.log{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.82rem;color:var(--muted);max-height:160px;overflow-y:auto;margin:10px 0 0;padding-inline-start:18px;display:flex;flex-direction:column;gap:4px}
