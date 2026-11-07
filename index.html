@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Read For Me</title>
+<meta name="description" content="Prototype of Read For Me, a reading-help flow for blind and low-vision people.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Arabic:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/phone.css">
+<link rel="stylesheet" href="css/panel.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+  <div>
+    <div class="phone">
+      <div class="screen" id="screen">
+        <div class="status" aria-hidden="true"><span>9:41</span><span id="app-name">Read For Me</span><span>100%</span></div>
+        <div class="bar">
+          <button class="back" id="back" hidden aria-label="Go back">← Back</button>
+          <h2 id="title" tabindex="-1">Home</h2>
+        </div>
+        <main class="body" id="view" aria-live="polite"></main>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+  <aside class="side" id="side">
+    <div>
+      <p class="eyebrow" id="page-eyebrow">CS 6750 Individual Project · mrady3</p>
+      <h1 id="page-title">Read For Me</h1>
+      <p class="intro" id="page-intro">A reading companion for people who are blind or have low vision. It pairs instant AI reading with a one-tap volunteer check, clear privacy boundaries, and multi-page reading that does not need a live call.</p>
+    </div>
+    <div id="start-here"></div>
+    <div id="tasks"></div>
+    <div id="controls"></div>
+  </aside>
+</div>
+
+<div class="sr" id="announce" aria-live="assertive"></div>
+<noscript><p class="noscript">This prototype needs JavaScript. Open it in a current version of Chrome, Edge, Firefox or Safari.</p></noscript>
+</body>
+</html>
